@@ -36,5 +36,17 @@ namespace ShowWpfWindowFromLibExecutorApp
             if (Exhibitor != null)
                 Exhibitor.ShowPicture("E:\\Temp\\Pictures\\Electronics2.jpg");
         }
+
+        private void btnHideWindow_Click(object sender, EventArgs e)
+        {
+            if (Exhibitor != null)
+                Exhibitor.ShowHideWindow(false);
+        }
+
+        private void btnShow_Click(object sender, EventArgs e)
+        {
+            if (Exhibitor != null)
+                Exhibitor.ShowHideWindow(true);
+        }
     }
 }

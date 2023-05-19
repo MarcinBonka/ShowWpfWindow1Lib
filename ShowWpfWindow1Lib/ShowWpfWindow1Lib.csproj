@@ -48,6 +48,7 @@
     <Compile Include="MyWpfPictureControl1.xaml.cs">
       <DependentUpon>MyWpfPictureControl1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PictureWindow.cs" />
     <Compile Include="WindowExhibitor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

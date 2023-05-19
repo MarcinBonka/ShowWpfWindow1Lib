@@ -50,15 +50,15 @@ namespace ShowWpfWindow1Lib
             MyImage = new BitmapImage(new Uri(pictureFilePath, UriKind.Absolute));
         }
 
-        private void UpdatePicture(string picturePath)
+        public void UpdatePicture(string picturePath)
         {
             MyImage = new BitmapImage(new Uri(picturePath, UriKind.Absolute));
         }
 
-        public void UpdatePictureExternal(string path)
-        {
-            // zmiana stanu przycisku za pomocą delegata i Dispatcher.Invoke()
-            Dispatcher.Invoke(new UpdatePictureDelegate(UpdatePicture), path);
-        }
+        //public void UpdatePictureExternal(string path)
+        //{
+        //    // zmiana stanu przycisku za pomocą delegata i Dispatcher.Invoke()
+        //    Dispatcher.Invoke(new UpdatePictureDelegate(UpdatePicture), path);
+        //}
     }
 }
